@@ -50,7 +50,6 @@ public class PairCollection<K extends Number & Comparable, V> {
                 for (int j = i; j < pointer-1; j++) {
                     array[j] = array[j + 1];
                 }
-                i = 0;
                 pointer--;
                 resize(array.length-1);
                 continue;
