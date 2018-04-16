@@ -25,13 +25,8 @@ public class PairCollection<K extends Number & Comparable, V> {
     public int caseCount(K key){
         int result = 0;
         for (Object o: this.array) {
-            if (o != null){
-                if (((Pair<K, V>)o).getKey() ==key){
-                    result++;
-                }
-            }
-            else{
-                break;
+            if (((Pair<K, V>)o).getKey() ==key){
+                result++;
             }
         }
         return result;
